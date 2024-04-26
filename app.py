@@ -20,6 +20,14 @@ def generate_building_ai(land_width, land_height):
     # Placeholder for AI algorithm to generate building design
     # This function would actually call your AI model or algorithm
     # and return the generated building design
+    if land_width > 50 and land_height > 50:
+        building_type = 'Skyscraper'
+        floors = 20
+    else:
+        building_type = 'House'
+        floors = 2
+    
+    area = land_width * land_height
     return {'building_type': 'Skyscraper', 'floors': 20, 'area': land_width * land_height}
 
 if __name__ == '__main__':
