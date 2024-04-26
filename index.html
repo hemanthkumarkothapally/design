@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Design AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Building Design AI</h1>
+        <form id="landForm">
+            <label for="landWidth">Land Width (meters):</label>
+            <input type="number" id="landWidth" name="landWidth" min="1" required>
+            <label for="landHeight">Land Height (meters):</label>
+            <input type="number" id="landHeight" name="landHeight" min="1" required>
+            <button type="submit">Generate Building</button>
+        </form>
+        <div id="buildingOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
